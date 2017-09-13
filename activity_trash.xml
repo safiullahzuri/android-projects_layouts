@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.safiullah.kabultrashcollector.TrashActivity">
+
+    <TextView
+        android:layout_width="match_parent" android:id="@+id/trashTV" android:text="Location Name"
+        android:layout_height="wrap_content" android:background="#d88"
+        android:textAlignment="center" android:padding="10dp" android:textSize="19dp"
+        />
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_below="@+id/trashTV"
+    tools:context="com.example.safiullah.kabultrashcollector.TrashActivity" />
+
+    <ScrollView
+        android:layout_width="match_parent" android:layout_below="@+id/map"
+        android:layout_height="wrap_content" android:id="@+id/scrollView">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent" android:id="@+id/commentsAboutSpecific_recyclerview"
+            android:layout_height="wrap_content" >
+
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent" android:id="@+id/relativelayout"
+        android:layout_height="40dp" android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:layout_width="200dp"  android:id="@+id/new_comment" android:hint="New Comment!"
+            android:layout_height="wrap_content"
+
+            />
+
+
+
+
+
+        <Button
+            android:layout_width="wrap_content" android:text="Push!"   android:layout_alignParentRight="true"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/new_comment"
+            android:id="@+id/push_comment"
+            android:layout_alignBottom="@+id/new_comment" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

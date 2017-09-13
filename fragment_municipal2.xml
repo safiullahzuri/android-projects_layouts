@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:orientation="vertical"
+        tools:context="com.example.safiullah.ktc_admin.MainActivity">
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:layout_width="match_parent" android:id="@+id/barChart"
+            android:layout_height="400dp"></com.github.mikephil.charting.charts.BarChart>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:layout_width="match_parent" android:layout_height="400dp"
+            android:id="@+id/lineChart"
+            ></com.github.mikephil.charting.charts.LineChart>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:layout_width="match_parent" android:layout_height="400dp"
+            android:id="@+id/pieChart" />
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

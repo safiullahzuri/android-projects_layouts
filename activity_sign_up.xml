@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.safiullah.kabultrashcollector.SignUpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="25dp"
+        android:layout_marginTop="30dp"
+        >
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailIL"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email" android:inputType="textEmailAddress"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwordIL" android:layout_below="@+id/emailIL"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Password" android:inputType="textPassword"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent" android:id="@+id/firstnameIL" android:layout_below="@+id/passwordIL"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent" android:hint="First Name"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent" android:id="@+id/lastnameIL" android:layout_below="@+id/firstnameIL"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent" android:hint="Last Name"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register Account"
+            android:id="@+id/registerBTN"
+            android:background="#f43" android:layout_below="@+id/lastnameIL"
+            android:layout_marginTop="19dp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:id="@+id/signinBTN"
+            android:background="#44e" android:layout_below="@+id/registerBTN"
+            android:layout_marginTop="19dp"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

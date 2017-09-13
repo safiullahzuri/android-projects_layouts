@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.safiullah.kabultrashcollector.PushTrashActivity">
+    <RelativeLayout
+        android:layout_width="match_parent" android:id="@+id/trashinfo"
+        android:layout_height="wrap_content" >
+
+
+        <android.support.design.widget.CheckableImageButton
+            android:layout_width="230dp" android:src="@drawable/avatar" android:layout_marginTop="40dp" android:layout_centerVertical="true"
+            android:layout_height="230dp" android:id="@+id/newtrashimage" android:layout_centerHorizontal="true"/>
+
+            <VideoView
+                android:layout_width="230dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true"
+                android:layout_height="230dp" android:id="@+id/newtrashvideo" android:layout_marginTop="40dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content" android:text="Location Here!" android:layout_below="@+id/newtrashimage"
+            android:layout_height="wrap_content" android:id="@+id/locationtext" android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+
+            />
+
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_below="@+id/trashinfo"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Push the post!"
+            android:background="#23f"
+            android:id="@+id/posttrashBTN"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

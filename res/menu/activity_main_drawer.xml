@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/play_video"
+            android:icon="@android:drawable/presence_video_away"
+            android:title="Play Video" />
+        <item
+            android:id="@+id/play_music"
+            android:icon="@android:drawable/ic_media_play"
+            android:title="Play Music" />
+        <item
+            android:id="@+id/image_viewer"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Image Viewer" />
+        <item
+            android:id="@+id/youtube_player"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Youtube Player" />
+        <item
+            android:id="@+id/phone_call"
+            android:icon="@android:drawable/ic_menu_call"
+            android:title="Dial a Phone Call" />
+        <item
+            android:id="@+id/google_map"
+            android:icon="@android:drawable/ic_dialog_map"
+            android:title="Google Map API" />
+        <item
+            android:id="@+id/take_picture"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Take a Picture" />
+    </group>
+
+
+</menu>
